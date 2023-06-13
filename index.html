@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="pt-br">
+<meta charset="UTF-8">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  
+  <form id="myForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="permissions">Permissões:</label>
+    <select id="permissions" name="permissions">
+      <option value="read">Leitura</option>
+      <option value="write">Escrita</option>
+      <option value="execute">Execução</option>
+    </select><br><br>
+    
+    <input type="submit" value="Enviar">
+    <a href="exec_script.php">Execultar Script</a>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
